@@ -1,5 +1,13 @@
 .grid {
     display: grid;
     grid-template-columns: 400px 280px 360px 400px;
-    grid-template-rows: 260px 280px 260;
+    grid-template-rows: 260px 280px 260px;
+}
+
+.pic {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.text {
+    grid-area: 3 / 2 / 4 / 3;
 }
