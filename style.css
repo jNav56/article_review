@@ -1,3 +1,5 @@
-h1 {
-    color: maroon;
+.grid {
+    display: grid;
+    grid-template-columns: 400px 280px 360px 400px;
+    grid-template-rows: 260px 280px 260;
 }
