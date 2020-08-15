@@ -30,13 +30,6 @@ p {
     grid-template-rows: 260px 280px 260px;
 }
 
-/* .box {
-    background-color: beige;
-    color: black;
-    border-radius: 5px;
-    border: 2px dodgerblue solid;
-} */
-
 .pic {
     grid-area: 2 / 2 / 3 / 3;
 }
@@ -84,3 +77,23 @@ p {
     bottom: 38px;
     left: 95px;
 }
+
+.button {
+    position: relative;
+    left: 380px;
+    bottom: 80px;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(237, 241, 250);
+}
+
+.arrow {
+    position: relative;
+    left: 25%;
+    top: 20%;
+}
+
