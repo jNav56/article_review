@@ -1,13 +1,86 @@
+body {
+    background-color: rgb(237, 242, 248);
+}
+
+h3 {
+    color: rgb(75, 87, 103);
+    font-family: Helvetica;
+    font-size: 21px;
+    position: relative;
+    left: 40px;
+    top: 10px;
+    line-height: 1.4;
+}
+
+p {
+    color: #727983;
+    font-family: Helvetica;
+    font-size: 14px;
+    position: relative;
+    left: 40px;
+    line-height: 1.4;
+}
+
 .grid {
+    height: 800px;
+    width: 1440px;
     display: grid;
-    grid-template-columns: 400px 280px 360px 400px;
+    /* border: 2px blue solid; */
+    grid-template-columns: 355px 280px 450px 355px;
     grid-template-rows: 260px 280px 260px;
 }
+
+/* .box {
+    background-color: beige;
+    color: black;
+    border-radius: 5px;
+    border: 2px dodgerblue solid;
+} */
 
 .pic {
     grid-area: 2 / 2 / 3 / 3;
 }
 
 .text {
-    grid-area: 3 / 2 / 4 / 3;
+    grid-area: 2 / 3 / 3 / 4;
+    background-color: white;
+    border-radius: 0px 15px 15px 0px;
+}
+
+#drawer {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px 0px 0px 15px;
+    /* clip-path: polygon(10% 10%, 90% 10%, 90% 90%, 10% 90%); */
+    /* transform: scale(1.1);  this enlarged the image*/ 
+  }
+
+#avatar {
+    width: 40px;
+    height: 40px;
+    clip-path: circle(50%);
+    position: relative;
+    left: 40px;
+    top: 10px;
+}
+
+.avatar_name {
+    color: rgb(75, 87, 103);
+    font-family: Helvetica;
+    font-weight: bold;
+    /* font-size: 13px; */
+    display: inline-block;
+    position: relative;
+    bottom: 15px;
+    left: 50px;
+}
+
+.date {
+    color: rgb(168, 175, 183);
+    font-family: Helvetica;
+    font-size: 12px;
+    position: relative;
+    bottom: 38px;
+    left: 95px;
 }
