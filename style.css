@@ -1,7 +1,7 @@
 body {
     background-color: rgb(237, 242, 248);
-    max-height: 800px;
-    max-width: 1440px;
+    height: 800px;
+    width: 1440px;
 }
 
 .drawer {
@@ -25,9 +25,20 @@ body {
     left: 640px;
 }
 
+h3, p, .avatar_name, .date, .share-text {
+    font-family: Manrope;
+}
+
+h3, .avatar_name {
+    color: hsl(217, 19%, 35%);
+    font-weight: 700;
+}
+
+p, .date, .share-text {
+    font-weight: 500;
+}
+
 h3 {
-    color: rgb(75, 87, 103);
-    font-family: Helvetica;
     font-size: 21px;
     position: relative;
     left: 40px;
@@ -36,8 +47,7 @@ h3 {
 }
 
 p {
-    color: #727983;
-    font-family: Helvetica;
+    color: hsl(214, 17%, 51%);
     font-size: 14px;
     position: relative;
     left: 40px;
@@ -54,10 +64,6 @@ p {
 }
 
 .avatar_name {
-    color: rgb(75, 87, 103);
-    font-family: Helvetica;
-    font-weight: bold;
-    /* font-size: 13px; */
     display: inline-block;
     position: relative;
     bottom: 15px;
@@ -65,8 +71,7 @@ p {
 }
 
 .date {
-    color: rgb(168, 175, 183);
-    font-family: Helvetica;
+    color: hsl(212, 23%, 69%);
     font-size: 12px;
     position: relative;
     bottom: 38px;
@@ -93,6 +98,7 @@ p {
 }
 
 .share {
+    background-color: rgb(73, 85, 107);
     display: none;
     height: 55px;
     width: 250px;
@@ -100,11 +106,6 @@ p {
     position: relative;
     bottom: 203px;
     left: 265px;
-}
-
-.button:hover + .share {
-    background-color: rgb(73, 85, 107);
-    display: block;
 }
 
 .triangle {
@@ -118,33 +119,29 @@ p {
     left: 44%;
 }
 
-.share > p {
-    color: #FFF;
+.share-text {
+    color: hsl(210, 46%, 95%);
     font-size: 14px;
     letter-spacing: 5px;
     position: relative;
     top: 33%;
     left: 32px;
-    /* border: 2px solid black; */
     display: inline;
 }
 
 .facebook {
-    /* border: 2px solid black; */
     position: absolute;
     top: 29%;
     left: 50%;
 }
 
 .twitter {
-    /* border: 2px solid black; */
     position: absolute;
     top: 31%;
     left: 64%;
 }
 
 .pinterest {
-    /* border: 2px solid black; */
     position: absolute;
     top: 28%;
     left: 77%;
