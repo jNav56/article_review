@@ -1,5 +1,28 @@
 body {
     background-color: rgb(237, 242, 248);
+    height: 800px;
+    width: 1440px;
+}
+
+.drawer {
+    height: 280px;
+    width: 285px;
+    border-radius: 15px 0% 0% 15px;
+    object-fit: cover;
+    object-position: 50% 100%;
+    position: absolute;
+    top: 260px;
+    left: 355px;
+}
+
+.preview {
+    height: 280px;
+    width: 445px;
+    background-color: white;
+    border-radius: 0px 15px 15px 0px;
+    position: absolute;
+    top: 260px;
+    left: 640px;
 }
 
 h3 {
@@ -20,34 +43,6 @@ p {
     left: 40px;
     line-height: 1.4;
 }
-
-.grid {
-    height: 800px;
-    width: 1440px;
-    display: grid;
-    /* border: 2px blue solid; */
-    grid-template-columns: 355px 280px 450px 355px;
-    grid-template-rows: 260px 280px 260px;
-}
-
-.pic {
-    grid-area: 2 / 2 / 3 / 3;
-}
-
-.text {
-    grid-area: 2 / 3 / 3 / 4;
-    background-color: white;
-    border-radius: 0px 15px 15px 0px;
-}
-
-#drawer {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    border-radius: 15px 0px 0px 15px;
-    /* clip-path: polygon(10% 10%, 90% 10%, 90% 90%, 10% 90%); */
-    /* transform: scale(1.1);  this enlarged the image*/ 
-  }
 
 #avatar {
     width: 40px;
