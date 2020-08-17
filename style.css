@@ -1,7 +1,7 @@
 body {
     background-color: rgb(237, 242, 248);
-    height: 800px;
-    width: 1440px;
+    max-height: 800px;
+    max-width: 1440px;
 }
 
 .drawer {
@@ -9,7 +9,7 @@ body {
     width: 285px;
     border-radius: 15px 0% 0% 15px;
     object-fit: cover;
-    object-position: 50% 100%;
+    object-position: 0 100%;
     position: absolute;
     top: 260px;
     left: 355px;
@@ -92,3 +92,60 @@ p {
     top: 20%;
 }
 
+.share {
+    display: none;
+    height: 55px;
+    width: 250px;
+    border-radius: 15px;
+    position: relative;
+    bottom: 203px;
+    left: 265px;
+}
+
+.button:hover + .share {
+    background-color: rgb(73, 85, 107);
+    display: block;
+}
+
+.triangle {
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid rgb(73, 85, 107);
+    position: absolute;
+    top: 55px;
+    left: 44%;
+}
+
+.share > p {
+    color: #FFF;
+    font-size: 14px;
+    letter-spacing: 5px;
+    position: relative;
+    top: 33%;
+    left: 32px;
+    /* border: 2px solid black; */
+    display: inline;
+}
+
+.facebook {
+    /* border: 2px solid black; */
+    position: absolute;
+    top: 29%;
+    left: 50%;
+}
+
+.twitter {
+    /* border: 2px solid black; */
+    position: absolute;
+    top: 31%;
+    left: 64%;
+}
+
+.pinterest {
+    /* border: 2px solid black; */
+    position: absolute;
+    top: 28%;
+    left: 77%;
+}
