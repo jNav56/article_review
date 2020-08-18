@@ -99,7 +99,7 @@ p {
 
 .share {
     background-color: rgb(73, 85, 107);
-    display: none;
+    /* display: none; */
     height: 55px;
     width: 250px;
     border-radius: 15px;
