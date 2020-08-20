@@ -4,7 +4,7 @@ body {
     /* border: 2px solid blue; */
 }
 
-/* * { border: 1px solid black; } */
+* { border: 1px solid black; }
 
 /* If the screen size is 500 pixels or less, apply these changes
 * to account for MOBILE view */
@@ -16,52 +16,62 @@ body {
 
     .drawer {
         height: 30%;
-        width: 87%;
+        width: 86%;
         border-radius: 15px 15px 0% 0%;
         object-position: 0 27%;
-        top: 74px;
-        left: 24px;
+        top: 11%;
+        left: 7%;
     }
 
     .preview {
         height: 47%;
-        width: 87%;
+        width: 86%;
         border-radius: 0% 0% 15px 15px;
-        top: 274px;
-        left: 24px;
+        top: 41%;
+        left: 7%;
     }
 
     h3 {
+        height: 20%;
         width: 80%;
-        font-size: 16px;
-        left: 35px;
-        top: 20px;
+        font-size: 4vw;
+        top: 4%;
+        left: 10%;
         line-height: 1.6;
     }
 
     p {
+        height: 30%;
         width: 75%;
-        font-size: 12px;
-        left: 35px;
-        top: 25px;
+        font-size: 3.75vw;
+        left: 10%;
+        top: 5%;
         word-spacing: 1px;
-        line-height: 1.4;
+        line-height: 1.2;
     }
 
-    #avatar {
-        left: 35px;
-        top: 45px;
+    .avatar {
+        left: 10%;
+    }
+
+    .nameAndDate {
+        left: 10%;
     }
 
     .avatar_name {
-        bottom: 30px;
-        left: 45px;
+        bottom: 5%;
+        left: 10%;
+    }
+
+    /*  .date {
+        left: 28%;
+        top: 21%;
     }
 
     .button {
-        left: 200px;
-        bottom: 80px;
-    }
+        left: 75%;
+        top: 5%;
+    }   */
 }
 
 /* If the screen size is 501 pixels or more, apply these changes
@@ -104,20 +114,28 @@ body {
         line-height: 1.4;
     }
 
-    #avatar {
+    .avatar {
         left: 40px;
-        top: 10px;
+    }
+
+    .nameAndDate {
+        left: 40px;
     }
 
     .avatar_name {
-        bottom: 15px;
-        left: 50px;
+        bottom: 10px;
+        left: 10px;
+    }
+
+    /*  .date {
+        bottom: 38px;
+        left: 95px;
     }
 
     .button {
         left: 380px;
         bottom: 80px;
-    }
+    }   */
 }
 
 .drawer {
@@ -152,30 +170,44 @@ p {
     position: relative;
 }
 
-#avatar {
+.bottomRow {
+    height: 20%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.avatar {
     width: 40px;
     height: 40px;
-    clip-path: circle(50%);
     position: relative;
+    clip-path: circle(50%);
+    float: left;
+}
+
+.nameAndDate {
+    height: 100%;
+    position: relative;
+    float: left;
+    background-color: rgb(124, 84, 23);
 }
 
 .avatar_name {
-    width: 130px;
-    display: inline-block;
+    width: fit-content;
     position: relative;
 }
 
 .date {
+    width: fit-content;
     color: hsl(212, 23%, 69%);
     font-size: 12px;
     position: relative;
-    bottom: 38px;
-    left: 95px;
 }
 
 .button {
     width: 40px;
     position: relative;
+    float: right;
 }
 
 .circle {
@@ -193,7 +225,6 @@ p {
 
 .share {
     background-color: rgb(73, 85, 107);
-    /* display: none; */
     height: 55px;
     width: 250px;
     border-radius: 15px;
