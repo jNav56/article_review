@@ -1,28 +1,133 @@
+/* Default values for desktop view */
 body {
     background-color: rgb(237, 242, 248);
-    height: 800px;
-    width: 1440px;
+    /* border: 2px solid blue; */
+}
+
+/* * { border: 1px solid black; } */
+
+/* If the screen size is 500 pixels or less, apply these changes
+* to account for MOBILE view */
+@media screen and (max-width: 500px) {
+    body {
+        width: auto;
+        height: auto;
+    }
+
+    .drawer {
+        height: 30%;
+        width: 87%;
+        border-radius: 15px 15px 0% 0%;
+        object-position: 0 27%;
+        top: 74px;
+        left: 24px;
+    }
+
+    .preview {
+        height: 47%;
+        width: 87%;
+        border-radius: 0% 0% 15px 15px;
+        top: 274px;
+        left: 24px;
+    }
+
+    h3 {
+        width: 80%;
+        font-size: 16px;
+        left: 35px;
+        top: 20px;
+        line-height: 1.6;
+    }
+
+    p {
+        width: 75%;
+        font-size: 12px;
+        left: 35px;
+        top: 25px;
+        word-spacing: 1px;
+        line-height: 1.4;
+    }
+
+    #avatar {
+        left: 35px;
+        top: 45px;
+    }
+
+    .avatar_name {
+        bottom: 30px;
+        left: 45px;
+    }
+
+    .button {
+        left: 200px;
+        bottom: 80px;
+    }
+}
+
+/* If the screen size is 501 pixels or more, apply these changes
+* to account for DESKTOP view */
+@media screen and (min-width: 501px) {
+    body {
+        width: 1440px;
+        height: 800px;
+    }
+
+    .drawer {
+        height: 280px;
+        width: 285px;
+        border-radius: 15px 0% 0% 15px;
+        object-position: 0 100%;
+        top: 260px;
+        left: 355px;
+    }
+
+    .preview {
+        height: 280px;
+        width: 445px;
+        border-radius: 0px 15px 15px 0px;
+        top: 260px;
+        left: 640px;
+    }
+
+    h3 {
+        width: 380px;
+        font-size: 21px;
+        left: 40px;
+        top: 10px;
+        line-height: 1.4;
+    }
+
+    p {
+        width: 380px;
+        font-size: 14px;
+        left: 40px;
+        line-height: 1.4;
+    }
+
+    #avatar {
+        left: 40px;
+        top: 10px;
+    }
+
+    .avatar_name {
+        bottom: 15px;
+        left: 50px;
+    }
+
+    .button {
+        left: 380px;
+        bottom: 80px;
+    }
 }
 
 .drawer {
-    height: 280px;
-    width: 285px;
-    border-radius: 15px 0% 0% 15px;
-    object-fit: cover;
-    object-position: 0 100%;
     position: absolute;
-    top: 260px;
-    left: 355px;
+    object-fit: cover;
 }
 
 .preview {
-    height: 280px;
-    width: 445px;
     background-color: white;
-    border-radius: 0px 15px 15px 0px;
     position: absolute;
-    top: 260px;
-    left: 640px;
 }
 
 h3, p, .avatar_name, .date, .share-text {
@@ -39,19 +144,12 @@ p, .date, .share-text {
 }
 
 h3 {
-    font-size: 21px;
     position: relative;
-    left: 40px;
-    top: 10px;
-    line-height: 1.4;
 }
 
 p {
     color: hsl(214, 17%, 51%);
-    font-size: 14px;
     position: relative;
-    left: 40px;
-    line-height: 1.4;
 }
 
 #avatar {
@@ -59,15 +157,12 @@ p {
     height: 40px;
     clip-path: circle(50%);
     position: relative;
-    left: 40px;
-    top: 10px;
 }
 
 .avatar_name {
+    width: 130px;
     display: inline-block;
     position: relative;
-    bottom: 15px;
-    left: 50px;
 }
 
 .date {
@@ -79,9 +174,8 @@ p {
 }
 
 .button {
+    width: 40px;
     position: relative;
-    left: 380px;
-    bottom: 80px;
 }
 
 .circle {
