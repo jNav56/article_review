@@ -4,7 +4,7 @@ body {
     /* border: 2px solid blue; */
 }
 
-* { border: 1px solid black; }
+/* * { border: 1px solid black; } */
 
 /* If the screen size is 500 pixels or less, apply these changes
 * to account for MOBILE view */
@@ -42,7 +42,7 @@ body {
 
     p {
         height: 30%;
-        width: 75%;
+        width: 80%;
         font-size: 3.75vw;
         left: 10%;
         top: 5%;
@@ -71,7 +71,44 @@ body {
 
      .button {
         right: 10%;
-        top: 10%;
+        bottom: 5%;
+    }
+
+    .share {
+        height: 140%;
+        width: 100%;
+        border-radius: 0px 0px 15px 15px;
+        bottom: 40%;
+    }
+
+    .share-text {
+        height: 27%;
+        width: 20%;
+        top: 18%;
+        left: 10%;
+        font-size: 4vw;
+        letter-spacing: 5px;
+    }
+
+    .facebook {
+        width: 8%;
+        padding-top: 0%;
+        top: 32%;
+        left: 35%;
+    }
+
+    .twitter {
+        width: 8%;
+        padding-top: 0%;
+        top: 35%;
+        left: 48%;
+    }
+
+    .pinterest {
+        width: 8%;
+        padding-top: 0%;
+        top: 33%;
+        left: 61%;
     }
 }
 
@@ -137,6 +174,14 @@ body {
         right: 30px;
     }
 
+    .share {
+        height: 55px;
+        width: 250px;
+        border-radius: 15px;
+        bottom: 90px;
+        left: 265px;
+    }
+
     .triangle {
         width: 0; 
         height: 0; 
@@ -147,6 +192,30 @@ body {
         top: 55px;
         left: 44%;
     }
+
+    .share-text {
+        top: 2px;
+        left: 30px;
+        width: 30%;
+        font-size: 14px;
+        letter-spacing: 5px;
+    }
+
+    .facebook {
+        top: 29%;
+        left: 50%;
+    }
+
+    .twitter {
+        top: 31%;
+        left: 64%;
+    }
+
+    .pinterest {
+        top: 28%;
+        left: 77%;
+    }
+
 }
 
 .drawer {
@@ -239,38 +308,22 @@ p {
 
 .share {
     background-color: rgb(73, 85, 107);
-    height: 55px;
-    width: 250px;
-    border-radius: 15px;
     position: relative;
-    bottom: 203px;
-    left: 265px;
 }
 
 .share-text {
     color: hsl(210, 46%, 95%);
-    font-size: 14px;
-    letter-spacing: 5px;
-    position: relative;
-    top: 33%;
-    left: 32px;
-    display: inline;
+    position: absolute;
 }
 
 .facebook {
     position: absolute;
-    top: 29%;
-    left: 50%;
 }
 
 .twitter {
     position: absolute;
-    top: 31%;
-    left: 64%;
 }
 
 .pinterest {
     position: absolute;
-    top: 28%;
-    left: 77%;
 }

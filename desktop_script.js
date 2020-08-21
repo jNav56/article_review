@@ -7,6 +7,12 @@ shareButton[0].addEventListener("click", function() {
     } else {
         share[0].style.display = "none";
     }
+
+    if (shareButton[0].style.zIndex == 0) {
+        shareButton[0].style.zIndex = 1;
+    } else {
+        shareButton[0].style.zIndex = 0;
+    }
 })
 
 var facebookShare = document.getElementsByClassName("facebook");
